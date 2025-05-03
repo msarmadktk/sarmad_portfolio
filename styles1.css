@@ -1,0 +1,231 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5rem;
+    box-sizing: border-box;
+
+}
+
+.mobile{
+    display: none;
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.2rem;
+    padding-top: 0.5rem;
+    z-index: 5;
+
+   
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.8); 
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3); 
+}
+
+
+.desktop li:hover {
+    background: rgba(255, 255, 255, 0.5); 
+    color: #9d5638; 
+}
+
+.mobile li:hover {
+    background: rgba(255, 255, 255, 0.5);
+    color: #9d5638; 
+}
+
+
+header ul {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header ul:hover {
+    cursor: pointer;
+}
+
+header li {
+    list-style: none;
+
+}
+
+header ul a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.main {
+    display: flex;
+    margin-top: 2rem;
+}
+
+
+.left {
+
+    padding: 2rem;
+    flex: 1;
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.details {
+    margin: 2rem;
+    line-height: 0.5rem;
+}
+
+#name {
+    font-size: 20px;
+    text-wrap: nowrap;
+}
+
+#uni {
+    font-size: 15px;
+    text-wrap: nowrap;
+    opacity: 60%;
+}
+
+
+.contact_info {
+    line-height: 0.5rem;
+}
+
+.social_info {
+    line-height: 0.5rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .social_info a {
+    margin-right: 15px;
+    color: #555;
+    transition: color 0.3s ease;
+    text-decoration: none;
+  }
+  
+  
+  .social_info a:hover {
+    color: #0e76a8; /* Default hover color (LinkedIn) */
+  }
+  .social_info a:nth-child(2):hover {
+    color: #3b5998; /* Facebook blue */
+  }
+  .social_info a:nth-child(3):hover {
+    color: #25D366; /* WhatsApp green */
+  }
+  
+  .social_info a:nth-child(4):hover {
+    color: #D44638; /* Email red */
+  }
+
+.right {
+    margin-top: 2.5rem;
+    padding: 2rem;
+    background-color: #9d5638 ;
+    color: white;
+    border-radius: 2rem;
+}
+
+.right h2{
+    background-color: white;
+    color: #9d5638;
+    border-radius: 2rem;
+    z-index: 2;
+    padding: 1rem;
+    display: inline-block;
+    margin-bottom: 0;
+    margin-top: 0.5rem;
+}
+
+h2 {
+    color: #9d5638;
+}
+
+
+img {
+    border-radius: 50%;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 2rem;
+}
+th, td {
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 8px;
+    color: white;
+    
+}
+th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+    color: black;
+}
+
+
+footer {
+    margin-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #9d5638 ;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    color: white;
+}
+
+
+
+@media (max-width: 900px) {
+    .main{
+        flex-direction: column;
+    }
+
+    .right{
+        margin-top: 0.5rem;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: flex;
+    }
+}
+
+@media (max-width: 550px) {
+    footer{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+}
